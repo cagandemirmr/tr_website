@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dijital Medya Yorum Analizi - Çağan Demir</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1f2937",
+                        "background-light": "#f9fafb",
+                        "background-dark": "#111827",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1f2937",
+                        "text-light": "#374151",
+                        "text-dark": "#d1d5db",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-primary text-gray-100 font-body min-h-screen flex flex-col items-center">
+<header class="w-full max-w-5xl px-6 pt-16 pb-12 text-center">
+<h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white uppercase font-display">
+            Çağan Demir
+        </h1>
+<p class="text-gray-300 text-lg md:text-xl font-light italic mb-8">
+            SQL, PowerBI, Tableau ve Python da uzman Veri Analisti
+        </p>
+<div class="flex justify-center mb-12">
+<div class="w-12 h-12 rounded-full border border-gray-500 flex items-center justify-center">
+<span class="material-icons text-gray-400 text-sm">expand_more</span>
+</div>
+</div>
+</header>
+<nav class="w-full max-w-5xl bg-gray-700/50 backdrop-blur-sm rounded-t-lg overflow-hidden flex flex-wrap md:flex-nowrap border-b border-gray-600">
+<a class="flex-1 py-4 text-center text-xs md:text-sm font-bold uppercase tracking-wider text-gray-300 hover:bg-gray-600 hover:text-white transition-colors duration-200" href="index.html">Anasayfa</a>
+<a class="flex-1 py-4 text-center text-xs md:text-sm font-bold uppercase tracking-wider bg-white text-gray-900" href="Projeler.html">Projeler</a>
+<a class="flex-1 py-4 text-center text-xs md:text-sm font-bold uppercase tracking-wider text-gray-300 hover:bg-gray-600 hover:text-white transition-colors duration-200" href="Uygulamalar.html">Uygulamalar</a>
+<a class="flex-1 py-4 text-center text-xs md:text-sm font-bold uppercase tracking-wider text-gray-300 hover:bg-gray-600 hover:text-white transition-colors duration-200" href="Hakkımda.html">Hakkımda</a>
+</nav>
+<main class="w-full max-w-5xl bg-background-light dark:bg-background-dark shadow-2xl overflow-hidden mb-12">
+<div class="p-8 md:p-12 lg:p-16">
+<div class="mb-12 border-b border-gray-200 dark:border-gray-700 pb-8">
+<div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wide font-semibold">
+<span class="material-icons text-base">folder_open</span> Proje Detayı
+                 </div>
+<h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight font-display mb-4">
+                    Dijital Medya Yorum Analizi
+                </h2>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-xs font-bold uppercase tracking-wide">NLP</span>
+<span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full text-xs font-bold uppercase tracking-wide">Python</span>
+<span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full text-xs font-bold uppercase tracking-wide">Sentiment Analysis</span>
+<span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 rounded-full text-xs font-bold uppercase tracking-wide">Data Viz</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-12">
+<section>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 flex items-center gap-2 border-l-4 border-blue-500 pl-3">
+                            Proje Özeti
+                        </h3>
+<p class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+                            Bu proje, çeşitli sosyal medya platformları ve e-ticaret sitelerinden toplanan kullanıcı yorumlarını analiz ederek, marka algısı ve müşteri memnuniyeti üzerine derinlemesine içgörüler sunmayı amaçlamaktadır. Doğal Dil İşleme (NLP) teknikleri kullanılarak yapılandırılmamış metin verileri anlamlı veri setlerine dönüştürülmüştür.
+                        </p>
+</section>
+<section>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 flex items-center gap-2 border-l-4 border-red-500 pl-3">
+                            Problem Tanımı
+                        </h3>
+<div class="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg border border-gray-200 dark:border-gray-700">
+<p class="text-gray-600 dark:text-gray-400 mb-4">
+                                Dijital çağda, müşteriler deneyimlerini anlık olarak paylaşmaktadır. Ancak binlerce, hatta milyonlarca yorumu manuel olarak okuyup analiz etmek imkansızdır. Şirketler şu sorunlarla karşı karşıyadır:
+                            </p>
+<ul class="space-y-2">
+<li class="flex items-start gap-3">
+<span class="material-icons text-red-500 mt-1">close</span>
+<span class="text-gray-700 dark:text-gray-300">Negatif geri bildirimlerin gürültü içinde kaybolması.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-icons text-red-500 mt-1">close</span>
+<span class="text-gray-700 dark:text-gray-300">Rakip analizinin veriye dayalı yapılamaması.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-icons text-red-500 mt-1">close</span>
+<span class="text-gray-700 dark:text-gray-300">Ürün geliştirme süreçlerinde gerçek kullanıcı sesinin eksikliği.</span>
+</li>
+</ul>
+</div>
+</section>
+<section>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 flex items-center gap-2 border-l-4 border-yellow-500 pl-3">
+                            Veri ve Metodoloji
+                        </h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Analiz süreci, verinin ham halden stratejik bilgiye dönüşümünü kapsamaktadır.
+                        </p>
+<div class="relative pl-8 border-l-2 border-gray-200 dark:border-gray-700 space-y-8">
+<div class="relative">
+<span class="absolute -left-[41px] bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400 rounded-full w-8 h-8 flex items-center justify-center border-4 border-white dark:border-gray-800">
+<span class="material-icons text-sm">cloud_download</span>
+</span>
+<h4 class="font-bold text-gray-900 dark:text-white">Veri Toplama (Scraping)</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Selenium ve BeautifulSoup kullanılarak Twitter, Google Play Store ve e-ticaret sitelerinden 50.000+ yorum çekildi.</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[41px] bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full w-8 h-8 flex items-center justify-center border-4 border-white dark:border-gray-800">
+<span class="material-icons text-sm">cleaning_services</span>
+</span>
+<h4 class="font-bold text-gray-900 dark:text-white">Ön İşleme (Preprocessing)</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Stop-words temizliği, lemmatization ve Türkçe karakter normalizasyonu uygulandı. Emoji analizi yapıldı.</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[41px] bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 rounded-full w-8 h-8 flex items-center justify-center border-4 border-white dark:border-gray-800">
+<span class="material-icons text-sm">psychology</span>
+</span>
+<h4 class="font-bold text-gray-900 dark:text-white">Duygu Analizi (Sentiment Analysis)</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">BERT tabanlı Türkçe dil modelleri (BERTurk) ile yorumlar Pozitif, Negatif ve Nötr olarak sınıflandırıldı.</p>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 flex items-center gap-2 border-l-4 border-green-500 pl-3">
+                            Sonuçlar ve İçgörüler
+                        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm border border-gray-100 dark:border-gray-700 text-center">
+<span class="block text-3xl font-bold text-green-500 mb-1">%65</span>
+<span class="text-xs text-gray-500 uppercase font-bold tracking-wide">Pozitif Geri Bildirim</span>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm border border-gray-100 dark:border-gray-700 text-center">
+<span class="block text-3xl font-bold text-red-500 mb-1">%20</span>
+<span class="text-xs text-gray-500 uppercase font-bold tracking-wide">Kritik Sorun Bildirimi</span>
+</div>
+</div>
+<p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Analiz sonucunda, müşteri şikayetlerinin %40'ının kargo süreçleri ve teslimat gecikmeleri ile ilgili olduğu tespit edildi. Mobil uygulama arayüzü ile ilgili yapılan son güncelleme ise pozitif yorumlarda %15'lik bir artış sağladı.
+                        </p>
+<div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-4 flex gap-4">
+<span class="material-icons text-green-600 dark:text-green-400 text-2xl">lightbulb</span>
+<div>
+<h4 class="font-bold text-green-800 dark:text-green-300 text-sm uppercase mb-1">İş Etkisi</h4>
+<p class="text-sm text-green-700 dark:text-green-400">
+                                    Lojistik partneri ile yapılan veriye dayalı görüşmeler sonucu teslimat süreleri optimize edilerek müşteri memnuniyet skoru (CSAT) 4.2'den 4.6'ya yükseltildi.
+                                </p>
+</div>
+</div>
+</section>
+</div>
+<div class="lg:col-span-1 space-y-8">
+<div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-inner">
+<h4 class="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+                            Kullanılan Araçlar
+                        </h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">Python</span>
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">Pandas</span>
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">Scikit-learn</span>
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">NLTK</span>
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">Matplotlib</span>
+<span class="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 px-3 py-1 rounded text-xs text-gray-600 dark:text-gray-300 font-semibold">Tableau</span>
+</div>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-inner">
+<h4 class="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 border-b border-gray-200 dark:border-gray-700 pb-2">
+                            Proje Linkleri
+                        </h4>
+<ul class="space-y-3">
+<li>
+<a class="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group" href="#">
+<span class="bg-white dark:bg-gray-700 p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<i class="material-icons text-sm">code</i>
+</span>
+<span class="text-sm font-medium">GitHub Deposu</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group" href="#">
+<span class="bg-white dark:bg-gray-700 p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<i class="material-icons text-sm">insert_chart</i>
+</span>
+<span class="text-sm font-medium">Canlı Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group" href="#">
+<span class="bg-white dark:bg-gray-700 p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<i class="material-icons text-sm">description</i>
+</span>
+<span class="text-sm font-medium">Teknik Rapor (PDF)</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 text-white text-center shadow-lg">
+<span class="material-icons text-4xl mb-2 text-gray-400">contact_support</span>
+<h4 class="text-lg font-bold mb-2">Benzer Bir Proje mi Lazım?</h4>
+<p class="text-xs text-gray-400 mb-6 leading-relaxed">Veri analizi ihtiyaçlarınız için benimle iletişime geçebilirsiniz.</p>
+<a class="inline-block px-6 py-2 bg-white text-gray-900 text-xs font-bold uppercase tracking-wider rounded hover:bg-gray-200 transition-colors" href="mailto:cagandemirmr@gmail.com">
+                            İletişime Geç
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="w-full max-w-5xl mb-12">
+<div class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-xl rounded-b-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-gray-800">
+<div class="p-8 flex items-start gap-4 hover:bg-white dark:hover:bg-gray-800 transition-colors">
+<div class="p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+<span class="material-icons text-gray-400 dark:text-gray-300">location_on</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1">Adres</h4>
+<p class="text-gray-700 dark:text-gray-300">Urla, İzmir</p>
+</div>
+</div>
+<div class="p-8 flex items-start gap-4 hover:bg-white dark:hover:bg-gray-800 transition-colors">
+<div class="p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+<span class="material-icons text-gray-400 dark:text-gray-300">phone</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1">Telefon</h4>
+<p class="text-gray-700 dark:text-gray-300">(543) 513-1060</p>
+</div>
+</div>
+<div class="p-8 flex items-start gap-4 hover:bg-white dark:hover:bg-gray-800 transition-colors border-t border-gray-200 dark:border-gray-800 md:border-t-0">
+<div class="p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+<span class="material-icons text-gray-400 dark:text-gray-300">email</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1">Email</h4>
+<a class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" href="mailto:cagandemirmr@gmail.com">cagandemirmr@gmail.com</a>
+</div>
+</div>
+<div class="p-8 flex items-start gap-4 hover:bg-white dark:hover:bg-gray-800 transition-colors border-t border-gray-200 dark:border-gray-800 md:border-t-0">
+<div class="p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+<span class="material-icons text-gray-400 dark:text-gray-300">share</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-1">Sosyal Medya</h4>
+<div class="flex gap-3">
+<a class="text-gray-400 hover:text-blue-600 transition-colors" href="#"><i class="material-icons text-sm">public</i></a>
+<a class="text-gray-400 hover:text-blue-400 transition-colors" href="#"><i class="material-icons text-sm">rss_feed</i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="text-center pb-8 text-xs text-gray-500 uppercase tracking-widest">
+        © Untitled | Design: HTML5 UP
+    </footer>
+
+</body></html>
